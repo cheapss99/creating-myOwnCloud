@@ -2,6 +2,11 @@
 $CONFIG = array (
   'htaccess.RewriteBase' => '/',
   'memcache.local' => '\\OC\\Memcache\\APCu',
+  'redis' => 
+  array (
+    'host' => 'localhost',
+    'port' => 6379,
+  ),
   'apps_paths' => 
   array (
     0 => 
@@ -27,10 +32,11 @@ $CONFIG = array (
     1 => 'angelo.tail0142bc.ts.net',
     2 => '100.93.249.12',
   ),
+  'overwrite.cli.url' => 'https://angelo.tail0142bc.ts.net',
+  'default_phone_region' => 'PH',
   'datadirectory' => '/var/www/html/data',
   'dbtype' => 'mysql',
   'version' => '31.0.8.1',
-  'overwrite.cli.url' => 'https://angelo.tail0142bc.ts.net',  // Changed to https and external URL
   'dbname' => 'nextcloud',
   'dbhost' => 'db',
   'dbport' => '',
@@ -39,11 +45,32 @@ $CONFIG = array (
   'dbuser' => 'nextcloud',
   'dbpassword' => 'nextcloud',
   'installed' => true,
-
-  // Added settings for reverse proxy and HTTPS
-  'trusted_proxies' => ['100.93.249.12'],  // Your Windows machine's Tailscale IP
-  'forwarded_for_headers' => ['HTTP_X_FORWARDED_FOR', 'HTTP_X_REAL_IP'],
+  'trusted_proxies' => 
+  array (
+    0 => '100.93.249.12',
+  ),
+  'forwarded_for_headers' => 
+  array (
+    0 => 'HTTP_X_FORWARDED_FOR',
+    1 => 'HTTP_X_REAL_IP',
+  ),
   'overwriteprotocol' => 'https',
   'overwritehost' => 'angelo.tail0142bc.ts.net',
   'overwritewebroot' => '',
+  'memcache.locking' => '\\OC\\Memcache\\Redis',
+  'maintenance_window_start' => 3,
+  'maintenance_window_duration' => 120,
+  'maintenance' => false,
+
+  'mail_smtpmode' => 'smtp',
+  'mail_sendmailmode' => 'smtp',
+  'mail_from_address' => 'hilarioangelo569',
+  'mail_domain' => 'gmail.com',
+  'mail_smtphost' => 'smtp.gmail.com',
+  'mail_smtpport' => 587,
+  'mail_smtpsecure' => 'tls',   // <-- IMPORTANT: use 'tls' with port 587
+  'mail_smtpauth' => 1,
+  'mail_smtpname' => 'hilarioangelo569@gmail.com',
+  'mail_smtppassword' => 'fxhu bloy tkmf stms',   // <-- your app password
+  'mail_smtptimeout' => 30,   // <-- optional but helps with Gmail
 );
