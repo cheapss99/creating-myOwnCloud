@@ -8,5 +8,7 @@
 ## Memory before the disaster
 ![b3948e6b-39d9-4631-a6db-6d42bba0c092](https://github.com/user-attachments/assets/317e90d1-6bc0-4f39-8324-26a11ee6ca39)
 
+![6cb81bfe-fa7d-452d-a3c7-9a134291d252](https://github.com/user-attachments/assets/806213c9-9963-4e72-9678-6b67c6147091)
+
 ## Day 2 
 (Update will come soon)
