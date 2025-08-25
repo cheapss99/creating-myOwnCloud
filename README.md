@@ -1,4 +1,4 @@
-#Progress 
+# Progress 
 ## Day 1
 -I fucked up my whole computer
 
